@@ -1,4 +1,5 @@
 import io
+import os
 import joblib
 import pandas as pd
 from fastapi import FastAPI, HTTPException, UploadFile, File
@@ -6,9 +7,6 @@ from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 
 app = FastAPI()
-
-import os
-import joblib
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
